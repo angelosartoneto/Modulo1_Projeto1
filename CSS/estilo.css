@@ -198,8 +198,8 @@ tr:nth-child(even) {
 	}
 	
 tr:hover:nth-child(1n + 1) {
-	background-color: #085F63;
-	color: rgb(4, 93, 12);
+	background-color: #085e63a5;
+	color: rgb(0, 0, 0);
 	}
 
 /* Conteudo final da página */

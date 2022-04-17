@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="shortcut icon" type="image/jpg" href="imagens/favicon.png" />
+	<script src="src/script.js"></script>
+
+	<title>Mercado Dev - Sua calculadora de compras</title>
+
+</head>
+
+<body onload="setInterval(step,250)">
+
+	<div class="box_pa">
+		<div class="cabecalho_box">
+			Seja bem-vindo(a) a calculadora de compras! Para mais informações ou dúvidas, role a página até o final.
+		</div>
+
+		<div class="Item">
+			<span class="tit_pdt">INSIRA ABAIXO O NOME DO ITEM DESEJADO:</span>
+
+			<div id="form">
+				<label>Item: </label>
+				<input type="text" name="nome" id="item" autocomplete="off" placeholder="Nome do item" />
+				<button onclick="item.adicionar()" id="add" class="add_">Adicionar Item</button>
+
+			</div>
+
+			<div class="conteudo_tab">
+				<table border="1">
+					<thead>
+						<th></th>
+						<th></th>
+						<th>Item</th>
+						<th class="ocultar">Valor</th>
+						<th></th>
+					</thead>
+
+					<tbody id="tabela">
+
+					</tbody>
+				</table>
+			</div>
+
+			<div class="modal-bg">
+				<div class="modal">
+					<h2>Informe o valor do item selecionado:</h2>
+					<input type="number" name="valor" id="valor" autocomplete="off" placeholder="Valor do item" />
+					<button onclick="item.adicionar('')" id="add" class="add_">Adicionar Valor</button>
+					<span class="modal-fechar">X</span>
+				</div>
+			</div>
+
+			<div class="calcular">
+				<h2>Valor Total R$:</h2>
+				<p id="resultado_soma"></p>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="conteudo">
+		<h3>Aqui você encontrará mais informações sobre esta página</h3>
+
+		<h4>Conheça mais sobre esta página: </h4>
+		<p>Está página foi criada apartir do primeiro projeto desenvolvido na instituição SESI/SENAI, no programa
+			DevInHouse.
+			Resumidamente, é colocado em prática todo o conhecimento adiquirido na primeira etapa do curso. De modo
+			geral,
+			a experiência e funcionalidades desta página é oferecer ao usuario uma ferramenta intuitiva, que possa
+			listar itens,
+			calcular os valores inseridos, retornar o valor total ao final e remove-los.
+			Com esta calculadora, é possivel adicionar itens de qualquer tipo ou categoria, sem limitação de quantidade.
+			Achou legal
+			e quer saber mais como funciona? Veja o passo a passo abaixo:
+		</p>
+
+		<p>
+			<li>Campo Nome do Item: Neste campo informe o nome do item.<br></li>
+			<li>Botão Adicionar Item: Após inserir o nome do item, clique no botão para inserir o item na lista.<br>
+			</li>
+			<li>Botão Cancelar: Limpa o campo Nome do Item.<br></li>
+			<li>Valor Total: A soma dos valores dos itens da lista. <br></li>
+			<li>Checkbox lateral: Marque este campo para informar um valor ao item. <br></li>
+			<li>Ícone de Lixeira: Clique sobre este ícone para remover o item desejado. <br></li>
+			<li>Valor do Item: Ao acessar a edição através do checkbox, será necessario informar um valor.<br></li>
+			<li>Para sair da tela valor do item, clique no botão fechar "X" na lateral direita da janela.<br></li>
+			<li><b>Dica:</b> Adiocione todos os itens primeiro, após, clique no checkbox e adiocione um valor. Mantenha
+				o popup aberto e preencha os demais valores marcando outros checkbox!<br></li>
+		</p>
+	</div>
+
+	<footer>
+		Desenvolvido por <a href="https://www.linkedin.com/in/angelosartoneto/">@AngeloSartoNeto (47)99293-5022 -
+			Florianopólis/SC 🤖</a>
+	</footer>
+
+</body>
+
+</html>
+
